@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Latihan Markup</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Calibri,Arial,sans-serif;}
+    body{background:#2e0d01;}
+    #wrapper{width:750px;margin:0 auto;overflow:hidden;}
+    #header{background:#fff;padding:20px;overflow:hidden;margin:20px 0;}
+    #logo{float:left;font-size:32px;font-weight:bold;}
+    #menu-utama{list-style:none;float:left;margin:10px 0 0 40px;}
+    #menu-utama li{display:inline-block;margin-right:20px;}
+    #menu-utama a{text-decoration:none;color:#050505;}
+    #search{float:right;padding:8px;margin-top:5px;width:180px;}
+    #slideshow{height:238px;background:#e5e5e5;margin-bottom:20px;display:flex;align-items:center;justify-content:center;font-size:28px;border:1px solid #ccc;}
+    #daftar-artikel{width:470px;float:left;}
+    .artikel{background:#fff;padding:15px;margin-bottom:20px;border:1px solid #ddd;}
+    .artikel h2{margin-bottom:10px;}
+    .artikel p{margin:10px 0;line-height:1.5;}
+    .artikel a{text-decoration:none;color:rgb(117, 115, 109);font-weight:bold;}
+    #sidebar{width:250px;float:right;background:#fff;padding:25px;border:1px solid #fff;}
+    #footer{clear:both;text-align:center;padding:10px;margin:20px 0;background:#f0f0f0;}
+      /* BAB 23 - Slider */
+    .slide-container{position:relative;width:100%;height:238px;overflow:hidden;}
+    .slide{position:absolute;width:100%;height:100%;opacity:0;transition:opacity 1s ease-in-out;}
+    .slide.active{opacity:1;}
+  </style>
+</head>
+<body>
+<div id="wrapper">
+  <div id="header">
+    <div id="logo" style="float:left; display:flex; flex-direction:column; line-height:1.1;">
+      <span style="font-size:34px; font-weight:bold; color:#923918;">FoodiesKu</span>
+      <span style="font-size:12px; color:#9b9a9a;">Kuliner, Resep & Inspirasi Makanan</span>
+    </div>
+    <ul id="menu-utama">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Tutorial</a></li>
+      <li><a href="#">Video</a></li>
+    </ul>
+    <input id="search" type="text" placeholder="Search" />
+  </div>
+
+  <div id="slideshow">
+    <div class="slide-container">
+      <img class="slide active" src="resepmochibites.png" alt="Slide 1" style="object-fit:cover;" />
+      <img class="slide" src="resepmochidaifuku.png" alt="Slide 2" style="object-fit:cover;" />
+      <img class="slide" src="resepicecreamochi.png" alt="Slide 3" style="object-fit:cover;" />
+    </div>
+  </div>
+
+  <div id="daftar-artikel">
+    <div class="artikel">
+      <img src="MOCHI BITES 1.jpeg" alt="Gambar Artikel" style="width:100%; margin-bottom:10px;" />
+      <h2>Mochi Bites</h2>
+      <small>Feb 12, 2007 | Views : 3,487,497</small>
+      <p>Nikmati mochi bites dengan tekstur lembut, isian lumer, dan rasa manis yang pas untuk camilan favorit semua orang.
+        Setiap gigitan menghadirkan perpaduan rasa yang lezat dan memanjakan lidah, cocok dinikmati saat bersantai bersama keluarga maupun teman. Dengan tampilan yang menarik dan cita rasa yang istimewa, mochi bites menjadi pilihan sempurna untuk menemani waktu santai, acara spesial, atau sekadar sebagai camilan manis di sela aktivitas sehari-hari.
+      </p>
+      <a href="#">Lihat Resep</a>
+    </div>
+    <div class="artikel">
+      <img src="mochi daifuku 1.jpeg" alt="Gambar Artikel" style="width:100%; margin-bottom:10px;" />
+      <h2>Mochi Daifuku</h2>
+      <small>Feb 12, 2007 | Views : 3,487,497</small>
+      <p>Nikmati mochi daifuku dengan tekstur lembut, isian lumer, dan rasa manis yang pas untuk camilan favorit semua orang.
+        Perpaduan kulit mochi yang kenyal dengan isian manis di dalamnya memberikan sensasi rasa yang lembut dan memanjakan lidah di setiap gigitan. Cocok dinikmati sebagai camilan saat bersantai, teman minum teh, maupun hidangan spesial untuk keluarga dan teman. Dengan tampilan yang cantik dan rasa yang lezat, mochi daifuku selalu menjadi pilihan favorit bagi pecinta dessert manis.
+      </p>
+      <a href="#">Lihat Resep</a>
+    </div>
+    <div class="artikel">
+      <img src="ice cream mochi.jpeg" alt="Gambar Artikel" style="width:100%; margin-bottom:10px;" />
+      <h2>Ice Cream Mochi</h2>
+      <small>Feb 12, 2007 | Views : 3,487,497</small>
+      <p>Nikmati ice cream mochi dengan tekstur lembut, lapisan mochi yang kenyal, serta isian es krim yang lembut dan dingin dengan rasa manis yang pas untuk camilan favorit semua orang. Sensasi perpaduan kulit mochi yang lembut dengan es krim yang creamy di dalamnya memberikan pengalaman rasa yang unik dan menyegarkan di setiap gigitan. Cocok dinikmati saat cuaca panas, waktu bersantai, maupun sebagai hidangan penutup yang istimewa bersama keluarga dan teman. Dengan pilihan berbagai rasa seperti cokelat, stroberi, vanila, dan matcha, ice cream mochi menjadi camilan modern yang lezat dan disukai banyak orang.</p>
+      <a href="#">Lihat Resep</a>
+    </div>
+  </div>
+
+   <div id="sidebar" > 
+<h2>Who we are?</h2> 
+
+<p>FoodiesKu adalah platform terbaik untuk Anda yang gemar memasak dan ingin mengeksplorasi berbagai resep makanan lezat. Di sini, Anda dapat menemukan beragam informasi seputar resep mochi, mulai dari mochi bites, mochi daifuku, hingga kreasi mochi modern dengan topping dan isian yang menarik. Selain resep mochi, FoodiesKu juga menghadirkan berbagai macam resep makanan lainnya, seperti camilan, dessert, makanan tradisional, hingga hidangan kekinian yang sedang populer.
+
+Kami hadir sebagai tempat berbagi inspirasi dan pengetahuan kuliner, sehingga setiap pengguna dapat mencoba resep baru, mempelajari tips memasak, serta meningkatkan kreativitas dalam membuat sajian istimewa. Dengan langkah-langkah yang mudah dipahami dan bahan yang sederhana, FoodiesKu siap menjadi teman terbaik Anda di dapur untuk menciptakan makanan yang lezat dan menggugah selera.</p> 
+
+<h2>Artikel berdasarkan kategori</h2> 
+<ul>
+<li><a href="">Resep Camilan</a></li> 
+<li><a href="" >Menu Harian</a></li>
+<li><a href="" >Kuliner Indonesia</a></li> 
+<li><a href="" >Masakan Sederhana</a></li> 
+<li><a href="" >Masakan Nusantara</a></li>
+<li><a href="" >Menu Sehat</a></li> 
+</ul>
+</div>
+<div id="footer"> 
+<p>FoodiesKu copyright 2026 by Piya</p> 
+</div>
+
+<script>
+  let slides=document.querySelectorAll('.slide');
+  let index=0;
+  setInterval(()=>{
+    slides[index].classList.remove('active');
+    index=(index+1)%slides.length;
+    slides[index].classList.add('active');
+  },3000);
+</script>
+</body>
+</html>
